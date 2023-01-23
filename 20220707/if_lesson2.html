@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If_lesson2</title>
+</head>
+<body>
+        <h1>Check the type of Age</h1>
+
+        <label for="id-age">Check Yor Age</label>
+        <input type="number" id="id-ageInput">
+        <button onclick="checkType()">CHECK</button>
+
+        <p>
+            Result : <span id="id-result"></span>
+        </p>
+
+        <script>
+            function checkType(){
+                let ageInput = document.getElementById('id-ageInput')
+                let result = document.getElementById('id-result')
+                if(ageInput.value>=50){
+                    result.innerText=ageInput.value + ' years old is an Old Person'
+                }
+                else if(ageInput.value>=20){
+                    result.innerText=ageInput.value + ' years old is an Adult Person'
+                }else if(ageInput.value<20){
+                    result.innerText=ageInput.value + ' years old is a Child'
+                }
+            }
+        </script>
+
+</body>
+</html>

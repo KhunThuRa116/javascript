@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+</head>
+<body>
+    <h1 id="page-title">If Condition(条件)</h1>
+
+    <input type="number" id="age-input" oninput="checkAge()">
+
+    <p>
+        Result : <span id="result-span"></span>
+    </p>
+
+    <!-- <p>
+        Result2 : <span id="result-span2"></span>
+    </p> -->
+
+    <script>
+        let a = 20;
+        a++;
+        console.log('first : '+ a);
+        a++;
+        console.log('second : '+ a);
+        
+        // Comparison Operator
+    
+        // if( Boolean Condition) {
+        //     true process
+        // }
+
+        if(a > 30) {
+            console.log('Greater than 30')
+        }
+
+        let pageTitle= document.getElementById('page-title');
+        console.log(pageTitle.innerText);
+        //replace <h1> element text
+        pageTitle.innerText = 'Change by JS';
+
+        function checkAge() {
+            // console.log('I am Here');
+            let ageInput = document.getElementById('age-input')
+
+            //result Display
+            let result = document.getElementById('result-span')
+
+            // console.log(result1.innerText);
+            // result2.innerText='u cannot drink sake';
+            // console.log('age : ' + ageInput.value)
+            if(ageInput.value > 19) {
+                console.log('お酒飲めます')
+                result.innerText='お酒飲めます';
+                
+            }else{
+                console.log('u cannot drink sake');
+                result.innerText='u cannot drink sake';
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color:black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    box-shadow: 0 0 1rem rgb(181, 89, 105);
+    padding: 2rem;
+    border-radius: .5rem;
+       
+}
+.item{
+    display: flex;
+    /* justify-content: center; */
+    
+}
+.flex-1{
+    display: flex;
+    box-shadow: 0 0 1rem rgb(108, 119, 220);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.pic{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+    background-color: aqua;
+}
+.price{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 100px;
+}
+.p-style{
+    /* padding-bottom: 2px; */
+    /* background-color: azure; */
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(142, 37, 37);
+    display: flex;
+    justify-content: center;
+}
+.action-amout-wrapper{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1rem rgb(105, 200, 176);
+    padding: 1rem;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.action-btn{
+    display: flex;
+}
+.btn-style-1{
+    flex: 1;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(85, 208, 89);
+    color: rgb(18, 27, 27);
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 0 1rem rgb(13, 231, 118);
+    border-radius: .25rem;
+
+}
+.btn-style-2{
+    flex: 1;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(245, 39, 39);
+    color: rgb(221, 237, 237);
+    box-shadow: 0 0 1rem rgb(13, 231, 118);
+    border-radius: .25rem;
+
+}
+
+/* .flex-1{
+    display: flex;
+    justify-content: center;
+}
+.pic{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.price{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+} */
+.img-style{
+    width: 250px;
+    height: 150px;
+}
+
+
+

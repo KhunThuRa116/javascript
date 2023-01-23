@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If assignment</title>
+</head>
+<body>
+
+    <label for="name">User Name</label><br>
+    <input type="text" id="name" oninput="nameCount()">
+    <span id="alert-text" style="color: red;"></span><br>
+
+    <label for="password">Password</label><br>
+    <input type="password" id="pass" oninput="passCount()">
+    <span id="alert-text2" style="color: red;"></span><br>
+
+    <label for="password">Confirm Password</label><br>
+    <input type="password" id="pass1" oninput="confirmPass()">
+    <span id="alert-text3" style="color: red;"></span>
+
+    <script>
+
+        function nameCount() {
+            let nameInput = document.getElementById('name');
+            let alert = document.getElementById('alert-text');
+            // console.log(nameInput.value.length)
+            if(nameInput.value.length<5){
+                alert.innerText= 'User Name Must Be at least 5 Characters'
+            }else{
+                alert.innerText= ''
+            }
+
+        }
+
+        function passCount(){
+            let passInput = document.getElementById('pass');
+            let alert2 = document.getElementById('alert-text2');
+            if(passInput.value.length<8){
+                alert2.innerText= 'Password Must Be at least 8 characters';
+            }else{
+                alert2.innerText= '';
+            }
+
+        }
+
+        function confirmPass(){
+            // function passCount()
+            let passInput = document.getElementById('pass');
+            let passInput1 = document.getElementById('pass1');
+            let alert3 = document.getElementById('alert-text3');
+            if(passInput1!=passInput){
+                alert3.innerText= 'Password Must Be the Same';
+            }if(passInput1.value==passInput.value){
+                alert3.innerText= '';
+            }
+        }
+
+    </script>
+
+    
+</body>
+</html>

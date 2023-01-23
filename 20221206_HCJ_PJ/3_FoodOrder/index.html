@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Order</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h1>Select Menu to Order</h1><br>
+        </div>
+
+        <div class="items">
+            
+            <div class="flex-1">
+                <div class="pic">
+                    <img src="img/hp.jpeg" alt="" class="img-style"><br>
+                    <p class="p-style">Hot Pot</p>
+                </div>
+                <div class="price">
+                    <p class="p-style">750</p>
+                </div>
+            </div><br><br>
+
+            <div class="action-amout-wrapper">
+                <div class="total-price">
+                    <h2>Total Cost</h2>
+                    <p id="count-price" class="p-style">0</p>
+                </div>
+                <div class="count">
+                    <h3>Count</h3>
+                    <p id="count-order" class="p-style">0</p>
+                </div>
+                <div class="actions-btn">
+                    <input type="button" value="+" onclick="plusOrder()" class="btn-style-1">
+                    <input type="button" value="-" onclick="minusOrder()" class="btn-style-2">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

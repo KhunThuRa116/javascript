@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <label for="Num One">Num One</label><br>
+        <input type="number" id="num-one" value="0">
+    </div><br>
+
+    <div>
+        <label for="Num Two">Num Two</label><br>
+        <input type="number" id="num-two" value="0">
+    </div><br>
+
+    <div>
+        <input type="button" value="+" onclick="addTwoNumbers()">
+        <input type="button" value="-" onclick="subTwoNumbers()">
+        <input type="button" value="x" onclick="mulTwoNumbers()">
+        <input type="button" value="/" onclick="divTwoNumbers()">
+        <input type="button" value="%" onclick="RemaninderofTwoNumbers()">
+        
+    </div>
+
+    <div>
+        <p>
+            SumOutput : <span id="sum-result"></span>
+        </p>
+        <p>
+            SubOutput : <span id="sub-result"></span>
+        </p>
+        <p>
+            MulOutput : <span id="mul-result"></span>
+        </p>
+        <p>
+            DivOutput : <span id="div-result"></span>
+        </p>
+        <p>
+            RemainderOutput : <span id="rem-result"></span>
+        </p>
+    </div>
+
+    <script>
+
+        function addTwoNumbers(){
+            // console.log('Hi There')
+            let numOne = document.getElementById('num-one');
+            let numTwo = document.getElementById('num-two');
+
+            // console.log(numOne.value + numTwo.value);
+            //convert string to number
+            // console.log(Number(numOne.value) + Number(numTwo.value));
+
+            let getResult = document.getElementById('sum-result') 
+            getResult.innerText= (Number(numOne.value) + Number(numTwo.value));
+
+        }
+
+        function subTwoNumbers(){
+            // console.log('Hi There')
+            let numOne = document.getElementById('num-one');
+            let numTwo = document.getElementById('num-two');
+
+            // console.log(numOne.value - numTwo.value);
+            //convert string to number
+            // console.log(Number(numOne.value) - Number(numTwo.value));
+
+            let getResult1 = document.getElementById('sub-result') 
+            getResult1.innerText= (Number(numOne.value) - Number(numTwo.value));
+
+        }
+
+        function mulTwoNumbers(){
+            // console.log('Hi There')
+            let numOne = document.getElementById('num-one');
+            let numTwo = document.getElementById('num-two');
+
+            // console.log(numOne.value * numTwo.value);
+            //convert string to number
+            // console.log(Number(numOne.value) * Number(numTwo.value));
+
+            let getResult2 = document.getElementById('mul-result') 
+            getResult2.innerText= (Number(numOne.value) * Number(numTwo.value));
+
+        }
+
+        function divTwoNumbers(){
+            // console.log('Hi There')
+            let numOne = document.getElementById('num-one');
+            let numTwo = document.getElementById('num-two');
+
+            // console.log(numOne.value / numTwo.value);
+            //convert string to number
+            // console.log(Number(numOne.value) / Number(numTwo.value));
+
+            let getResult3 = document.getElementById('div-result') 
+            getResult3.innerText= (Number(numOne.value) / Number(numTwo.value));
+
+        }
+
+        function RemaninderofTwoNumbers(){
+            // console.log('Hi There')
+            let numOne = document.getElementById('num-one');
+            let numTwo = document.getElementById('num-two');
+
+            // console.log(numOne.value / numTwo.value);
+            //convert string to number
+            // console.log(Number(numOne.value) / Number(numTwo.value));
+
+            let getResult4 = document.getElementById('rem-result') 
+            getResult4.innerText= (Number(numOne.value) % Number(numTwo.value));
+
+        }
+
+    </script>
+
+
+
+    
+</body>
+</html>

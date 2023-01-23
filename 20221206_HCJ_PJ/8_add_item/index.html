@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="form-input">
+            <input type="text" placeholder="Blar Blar" id="item-input-id">
+            <input type="button" value="Add Item" onclick="addItem()">
+        </div>
+
+        <div class="error" id="error-msg"></div>
+
+        <div class="item-list" id="item-list-id">
+
+            <div class="item" onclick="deleteElement(this)">
+                <p>Google</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

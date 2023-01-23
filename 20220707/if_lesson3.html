@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Change Bg-Color</title>
+</head>
+<body>
+
+    <button onclick="changeBlue()">Blue</button>
+    <button onclick="changeRed()">Red</button>
+    <button onclick="changeGreen()">Green</button>
+
+    <div class="box" id="color-changeable-box">
+
+    </div>
+
+    <script>
+        function changeBlue(){
+            //change bg color to blue
+            // document.body.style.backgroundColor = 'blue';
+            let boxEle =document.getElementById('color-changeable-box') ;
+            boxEle.style.backgroundColor = 'blue'
+        }
+
+        function changeRed(){
+            // document.body.style.backgroundColor = 'red';
+            let boxEle =document.getElementById('color-changeable-box') ;
+            boxEle.style.backgroundColor = 'red'
+
+        }
+
+        function changeGreen(){
+            // document.body.style.backgroundColor = 'green';
+            let boxEle =document.getElementById('color-changeable-box') ;
+            boxEle.style.backgroundColor = 'green'
+
+        }
+    </script>
+
+</body>
+</html>
