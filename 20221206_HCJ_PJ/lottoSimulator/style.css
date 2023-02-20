@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1rem rgb(52, 161, 79);
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.count-text{
+    text-align: center;
+    font-size: 2rem;
+    padding: .3rem;
+}
